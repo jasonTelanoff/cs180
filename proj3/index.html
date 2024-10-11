@@ -1,0 +1,288 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c5 {
+            padding-top: 20pt;
+            padding-bottom: 6pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c1 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 20pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c4 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c3 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c2 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c7 {
+            background-color: #ffffff;
+            max-width: 900pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c6 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c7 doc-content">
+    <h1 class="c5" id="h.q18fdewlscf6"><span class="c1">Defining Correspondences</span></h1>
+    <p class="c4"><span class="c0">To start off the project, I needed to create a mesh of my (and a friend&rsquo;s)
+            face. To do this, I manually selected key points on our faces and used Delaunay Triangulation to
+            triangularize the points. Below are the results</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 579.50px; height: 263.31px;"><img
+                alt="" src="images/image3.png"
+                style="width: 702.15px; height: 351.15px; margin-left: -67.51px; margin-top: -45.72px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <h1 class="c5" id="h.ivmhi1gc99xd"><span class="c1">Computing the &quot;Mid-way Face&quot;</span></h1>
+    <p class="c4"><span class="c0">This came with a lot of problems, and easily resulted in the most debugging. It gave
+            me a lot of cool and trippy images, this one being my favorite. I&rsquo;m still not sure what caused
+            this.</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 305.73px; height: 283.49px;"><img
+                alt="" src="images/image8.png"
+                style="width: 305.73px; height: 283.49px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c4"><span class="c0">After fixing these many, many problems, I finally was able to compute the mid-way
+            face.</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 239.50px; height: 221.16px;"><img
+                alt="" src="images/image4.jpg"
+                style="width: 239.50px; height: 221.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 221.40px;"><img
+                alt="" src="images/image2.png"
+                style="width: 240.00px; height: 221.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 222.19px;"><img
+                alt="" src="images/image7.jpg"
+                style="width: 240.00px; height: 222.19px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c4"><span class="c0">The only minor imperfection is with the shirt, but getting the hair to blend was
+            annoying enough, so I&rsquo;m leaving it.</span></p>
+    <h1 class="c5" id="h.1sdt56ftr9on"><span class="c1">The Morph Sequence</span></h1>
+    <p class="c4"><span class="c0">After being able to compute the mid-way between two images, I next had to create a
+            morph sequence. To do this, I changed some values to be parameters, and after not too much work, had a
+            working way to morph between two images a desired amount. The only problem now was how unbearably slow my
+            function was. It&rsquo;d take about 4-5 seconds per morph, which was far too slow for future parts of this
+            project. To help with speed, I coded another morph function that runs about 3-4 times as fast, but
+            doesn&rsquo;t perform the morph exactly as described in class.</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 389.97px; height: 360.52px;"><img
+                alt="" src="images/image1.gif"
+                style="width: 389.97px; height: 360.52px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <h1 class="c5" id="h.rtnbfmki5913"><span class="c1">The &quot;Mean face&quot; of a population</span></h1>
+    <p class="c4"><span>To find the &ldquo;Mean face&rdquo; of a population, I first needed the faces of a population.
+            To get this, I went to </span><span class="c2"><a class="c6"
+                href="https://www.google.com/url?q=https://fei.edu.br/~cet/facedatabase.html&amp;sa=D&amp;source=editors&amp;ust=1728622056008630&amp;usg=AOvVaw3bria2jPrNM_4I2jVmHAeP">https://fei.edu.br/~cet/facedatabase.html</a></span><span
+            class="c0">&nbsp;and downloaded frontalimages_spatiallynormalized_cropped_equalized_part1 and their
+            corresponding annotations. Next, I computed the average coordinates of each point, and then morphed all the
+            images onto that. This gave me a pretty good looking average face. I did this for both the neutral and the
+            smiling faces. Note that the images are grayscale, and matplotlib renders these with the colors below and I
+            think it&rsquo;s too cool to change them.</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 912.00px; height: 482.00px;"><img
+                alt="" src="images/image6.png"
+                style="width: 912.00px; height: 482.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <h1 class="c5" id="h.9l86v7f3pwol"><span class="c1">Caricatures: Extrapolating from the mean</span></h1>
+    <p class="c4"><span class="c0">Finally, I morphed myself onto the mean using alphas of 1, 0, and -0.5,
+            getting</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 950.00px; height: 348.00px;"><img
+                alt="" src="images/image9.png"
+                style="width: 950.00px; height: 348.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c4"><span class="c0">And then morphed the average face onto my own facial feature, getting</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 328.00px; height: 389.00px;"><img
+                alt="" src="images/image5.png"
+                style="width: 328.00px; height: 389.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <h1 class="c5" id="h.dte0387vl313"><span class="c1">Bells and Whistles</span></h1>
+    <p class="c4"><span>As an added flair, I wanted to create a morphing music video on a theme. Being the uncreative
+            and lazy man that I am, I used the annotated dataset I already had and was comfortable using, using the
+            theme of Halloween. I also used the morphing on a jack o&rsquo;lantern, which inverted the colors for
+            whatever reason and didn&rsquo;t work very well. Here is a link to the video: </span><span class="c2"><a
+                class="c6"
+                href="https://www.google.com/url?q=https://youtu.be/FKz4hs4sLeY&amp;sa=D&amp;source=editors&amp;ust=1728622056009624&amp;usg=AOvVaw1PEyhozJWJQcEQMghLYbtD">https://youtu.be/FKz4hs4sLeY</a></span>
+    </p>
+</body>
+
+</html>
